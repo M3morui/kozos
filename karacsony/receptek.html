@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="./kepek/gingerbread-man.png">
+    <link rel="stylesheet" href="snow.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>A Mi Karácsonyunk</title>
+</head>
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Caveat&family=DynaPuff:wght@400..700&family=Prociono&display=swap');
+
+    *{
+        font-family: "DynaPuff", system-ui;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+    }
+
+    .logo{
+        width: 75px;
+        border-radius: 60px;
+    }
+
+    .main-kep{
+        background-image: url(./kepek/receptek.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .mainhatter{
+        background-color: rgb(254, 207, 217);
+    }
+
+    header{
+        box-shadow: 0px 4px 8px rgb(0, 0, 0, 0.3);
+    }
+
+    .nav-link.active{
+        color: #090030 !important;
+    }
+
+    .nav-link.active:hover{
+        color: #ff2600 !important;
+    }
+
+    .recepteszin{
+        color: #ff2600 !important;
+    }
+
+    .nav-link:link,
+    .nav-link:visited{
+        color: #090030;
+        font-size: 18px;
+        font-weight: 500;
+        margin-right: 24px;
+        transition: all 0.3s linear;
+    }
+
+    .nav-link:hover, 
+    .nav-link:active{
+        color: #ff2600;
+    }
+
+    .dropdown-item{
+        color: #090030 !important;
+    }
+
+    .dropdown-menu{
+        background-color: #FECFD9 !important;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .kajakep {
+        width: 170px;
+        margin-left: 22px;
+        margin-top: 12px;
+    }
+
+    .kajakep:hover {
+        cursor: pointer;
+    }
+
+    .foetelclass {
+        background-color: rgba(0, 0, 0, 0.3);
+        color: white;
+        margin-top: 30px;
+        padding: 10px;
+        border-radius: 15px;
+        margin-bottom: 50px;
+    }
+
+    .suticlass {
+        background-color: rgba(0, 0, 0, 0.3);
+        color: white;
+        margin-top: 30px;
+        padding: 10px;
+        border-radius: 15px;
+        margin-bottom: 50px;
+    }
+
+    .sajtosrudacskaclass {
+        background-color: rgba(0, 0, 0, 0.3);
+        color: white;
+        margin-top: 30px;
+        padding: 10px;
+        border-radius: 15px;
+        margin-bottom: 50px;
+    }
+</style>
+
+
+
+<body>
+    <div id="snow-container"></div>
+
+
+
+    <div class="mainhatter">
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand fs-4 fw-bold text-danger" href="fooldal.html"><img src="./kepek/logo.jpg" alt="logo" class="logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="fooldal.html">Főoldal</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="tortenete.html">Története</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle recepteszin" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Receptek
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item text-primary" href="#foetelek">Főételek</a></li>
+                                    <li><a class="dropdown-item text-primary" href="#sutemenyek">Sütemények</a></li>
+                                    <li><a class="dropdown-item text-primary" href="#sosak">Sósak</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="filmek.html" class="nav-link">Filmes bónuszok</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+    
+
+
+    <main>
+        <div class="mainhatter">
+            <section>
+                <div class="container">
+                    <section id="foetelek" class="foetelclass">
+                        <div class="row">
+                            <div class="col-2">
+                                <img src="kepek/karissultkacsa.png" alt="Sült Kacsa PNG" title="Sült Kacsa" class="kajakep" data-aos="fade-right" data-aos-duration="1100">
+                            </div>
+        
+        
+                            <div class="col-10" style="text-align: justify; margin-top: 12px;">
+                                <h4 style="text-decoration: underline;" data-aos="fade-right" data-aos-duration="1100">Ami mindig viszi a pálmát</h4>
+                                <p style="margin-top: 20px; margin-right: 20px;" data-aos="fade-right" data-aos-duration="1100">
+                                    A sült kacsa a magyar karácsonyi asztal egyik különleges fogása, amely a gazdag ízek és a ropogós bőr kombinációját kínálja. A kacsát először alaposan megtisztítják, majd fűszerekkel, mint például majorannával, fokhagymával, sóval és borssal ízesítik, esetleg borral is pácolják. A sütést lassú tűzön kezdik, hogy a hús puhuljon, és a bőr ropogósra süljön. A sült kacsát gyakran párolt káposztával, sült burgonyával vagy más köretekkel tálalják, és néha vörösáfonya vagy szilva is kerül mellé, hogy édes-savanyú ízzel gazdagítsák. Ez az étel nemcsak ízletes, hanem látványos is, így méltó helyet kap a karácsonyi menüben.
+                                </p>
+                            </div>
+        
+        
+                            <div class="col-2">
+                                <img src="kepek/toltkap.png" alt="Töltött Káposzta PNG" title="Töltött Káposzta" class="kajakep" data-aos="fade-right" data-aos-duration="1400">
+                            </div>
+        
+        
+                            <div class="col-4" style="text-align: justify; margin-top: 12px;">
+                                <h5 style="text-decoration: underline;" data-aos="fade-right" data-aos-duration="1400">Egy öreg motoros</h5>
+                                <p style="margin-top: 20px; margin-right: 20px;" data-aos="fade-right" data-aos-duration="1400">
+                                    Köztudott fogás a töltött káposzta, ami generációkon át kötődik a családi hagyományokhoz és a téli ünnepekhez. Ez az ünnepi fogás minden falatjában otthonosságot áraszt, és sokak számára megunhatatlan.
+                                </p>
+                            </div>
+        
+        
+                            <div class="col-2">
+                                <img src="kepek/halacska.png" alt="Rántott Hal PNG" title="Rántott Hal" class="kajakep" data-aos="fade-right" data-aos-duration="1700">
+                            </div>
+        
+        
+                            <div class="col-4" style="text-align: justify; margin-top: 12px;">
+                                <h5 style="text-decoration: underline;" data-aos="fade-right" data-aos-duration="1700">El ne ússzon a jó kedv!</h5>
+                                <p style="margin-top: 20px; margin-right: 20px;" data-aos="fade-right" data-aos-duration="1700">
+                                    Megszokott étel talán a rántott hal, amelyet, a halat lisztbe, tojásba és zsemlemorzsába forgatva sütnek ropogósra. Az ínycsiklandó, aranybarna falatok ízvilágát sok esetben citrommal gazdagítják.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </div>
+        
+        
+            
+        <div class="main-kep">
+            <section>
+                <div class="container">
+                    <section id="sutemenyek" class="suticlass">
+                        <div class="row">
+                            <div class="col-2">
+                                <img src="kepek/mezeskalacsocska.png" alt="Mézeskalács PNG" title="Mézeskalács" class="kajakep" data-aos="fade-right" data-aos-duration="1100">
+                            </div>
+                            <div class="col-10" style="text-align: justify; margin-top: 12px;">
+                                <h4 style="text-decoration: underline;" data-aos="fade-right" data-aos-duration="1100">Az örök első helyezett</h4>
+                                <p style="margin-top: 20px; margin-right: 20px;" data-aos="fade-right" data-aos-duration="1100">
+                                    Ő a szemünk fénye, mindannyiunk szíve mélyén ott lakozik, nagyon aranyosan néz ki és még annál is finomabb talán: Igen, természetesen a mézeskalácsról van itt szó. A lisztet, a porcukrot, a fűszert és a szódabikarbónát egy nagy tálba keverjük. Hozzáadjuk az enyhén megolvasztott margarint. Ezután a mézet és a tojást is hozzáadjuk. Villával az egészet elkavarjuk és ezután kézzel egynemű tésztává gyúrjuk. Majd 3 egyenlő részre osztjuk. Az első adagot jól kilisztezett deszkán kb 1 cm vastagságúra nyújtjuk. Tetszőleges formákra szaggatjuk. Sütőpapíron, 180 fokon 10 percig sütjük és nem tovább.
+                                </p>
+                            </div>
+                            <div class="col-2">
+                                <img src="kepek/zserbi.png" alt="Mézeskalács PNG" title="Mézeskalács" class="kajakep" data-aos="fade-right" data-aos-duration="1400">
+                            </div>
+                            <div class="col-4" style="text-align: justify; margin-top: 12px;">
+                                <h5 style="text-decoration: underline;" data-aos="fade-right" data-aos-duration="1400">Egy szeletnyi gyerekkor</h5>
+                                <p style="margin-top: 20px; margin-right: 20px;" data-aos="fade-right" data-aos-duration="1400">
+                                    A három réteg piskótából, diós töltelékből és baracklekvárból készülő zserbó szeleteket csokoládémáz borítja, így minden falat egy tökéletes egyensúlyt alkot az édes és a fanyar ízek között.
+                                </p>
+                            </div>
+                            <div class="col-2">
+                                <img src="kepek/epreskosarkak.png" alt="Mézeskalács PNG" title="Mézeskalács" class="kajakep" data-aos="fade-right" data-aos-duration="1700">
+                            </div>
+                            <div class="col-4" style="text-align: justify; margin-top: 12px;">
+                                <h5 style="text-decoration: underline;" data-aos="fade-right" data-aos-duration="1700">A szeretet kosara</h5>
+                                <p style="margin-top: 20px; margin-right: 20px;" data-aos="fade-right" data-aos-duration="1700">
+                                    A leveles tésztából készülő töltött kosárka különféle finom töltelékekkel több mint tökéletes és kiváló harmóniát alkot, igazi élvezetté válva minden falattal. Csak aztán el ne rontsuk!
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+            
+                
+    
+            <section>
+                <div class="container">
+                    <section id="sosak" class="sajtosrudacskaclass">
+                        <div class="row">
+                            <div class="col-2">
+                                <img src="kepek/sajtosrudacska.png" alt="Sajtos Rudacska PNG" title="Sajtos Rudacska" class="kajakep" data-aos="fade-right" data-aos-duration="1100">
+                            </div>
+                            <div class="col-10" style="text-align: justify; margin-top: 12px;">
+                                <h4 style="text-decoration: underline;" data-aos="fade-right" data-aos-duration="1100">Ha már nasik, és nem édes...</h4>
+                                <p style="margin-top: 20px; margin-right: 20px;" data-aos="fade-right" data-aos-duration="1100">
+                                    Mi mást is választhatnánk mint sós nasi, ha nem egy klasszikust a sajtos rúd szerepében. Rengetegszer előkerül ugyan az év során, de kihagyhatatlan részét képzi minden jeles alkalomnak, viszonylag egyszerű elkészítése miatt is, és a nagy rajongótábora miatt is. Réteslisztet sütőmargarinnal, sóval elmorzsoljuk, majd a szalalkálit is hozzáadjuk. Tejföllel, reszelt sajttal, tojással és tejjel jól átgyúrjuk, amíg sima tésztát kapunk. 1 centi vastagságúra nyújtjuk a tésztát, tetejét megkenjük tojásfehérje felvert habjával, megszórjuk reszelt sajttal, és hosszúkásra vágjuk. Előmelegített sütőben aranybarnára sütjük.
+                                </p>
+                            </div>
+                            <div class="col-2">
+                                <img src="kepek/pogik.png" alt="Sajtos Pogácsa PNG" title="Sajtos Pogácsa" class="kajakep" data-aos="fade-right" data-aos-duration="1400">
+                            </div>
+                            <div class="col-4" style="text-align: justify; margin-top: 12px;">
+                                <h5 style="text-decoration: underline;" data-aos="fade-right" data-aos-duration="1400">A rokon a másik esélyes</h5>
+                                <p style="margin-top: 20px; margin-right: 20px;" data-aos="fade-right" data-aos-duration="1400">
+                                    Ha már sajtos rudacska, meg kell említeni a másik, elég hasonló, és ikonikus testvérét is, a pogácsát. Nagyon régóta készül rengeteg háztartásban rengeteg fajta, de az eredmény mindig ellenállhatatlan.
+                                </p>
+                            </div>
+                            <div class="col-2">
+                                <img src="kepek/tekercsek.png" alt="Sajtos Tekercs PNG" title="Sajtos Tekercs" class="kajakep" data-aos="fade-right" data-aos-duration="1700">
+                            </div>
+                            <div class="col-4" style="text-align: justify; margin-top: 12px;">
+                                <h5 style="text-decoration: underline;" data-aos="fade-right" data-aos-duration="1700">Tekercsbe írt boldogság</h5>
+                                <p style="margin-top: 20px; margin-right: 20px;" data-aos="fade-right" data-aos-duration="1700">
+                                    Nem feledhetjük ki a listánkból a másik nagyon kedvelt nassolnivalót se, a sajtos tekercset. Csapatunk egyik személyes kedvence, nélkülözhetetlen és pótolhatatlan, íze pedig utánozhatatlan.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </div>         
+    </main>
+    
+
+
+
+
+
+    <script src="snow.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

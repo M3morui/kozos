@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="./kepek/gingerbread-man.png">
+    <link rel="stylesheet" href="snow.css">
+    <link rel="stylesheet" href="lights.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>A Mi Karácsonyunk</title>
+</head>
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Caveat&family=DynaPuff:wght@400..700&family=Prociono&display=swap');
+
+    *{
+        font-family: "DynaPuff", system-ui;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+    }
+
+    .logo{
+        width: 75px;
+        border-radius: 60px;
+    }
+
+    .bg-dark{
+        background-color: #000000 !important;
+    }
+
+    #filmek{
+        background-image: url(./kepek/fimek.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .nav-link.active{
+        color: #8eb9ff !important;
+    }
+
+    .nav-link.active:hover{
+    color: #ff2600 !important;
+}
+
+    .filmekszin{
+        color: #ff2600 !important;
+    }
+
+    .nav-link:link , .nav-link:visited{
+        color: #8eb9ff;
+        font-size: 18px;
+        font-weight: 500;
+        margin-right: 24px;
+        transition: all 0.3s linear;
+    }
+
+    .nav-link:hover , .nav-link:active{
+        color: #ff2600;
+    }
+
+    .dropdown-item{
+        color: #8eb9ff !important;
+    }
+
+    .dropdown-menu{
+        background-color: #000000 !important;
+    }
+
+    .filmcim{
+        color: white;
+        text-align: center;
+        padding: 5px;
+        margin-top: 25px;
+    }
+
+    .card{
+        border-radius: 5px;
+        background-size: auto 100%;
+        background-position: 50%;
+        width: 150px;
+        height: 215px;
+    }
+
+    .card:hover{
+        transform: translateY(-10px);
+    }
+
+    .title{
+        color: white;
+        text-align: center;
+        font-size: 16px;
+        text-decoration: none;
+    }
+
+    .title:hover{
+        color: #ff2600;
+    }
+
+    .card-bottom{
+        margin-top: 138px;
+        margin-left: -1px;
+        margin-right: -1px;
+        background: linear-gradient(180deg,
+        rgba(17, 17, 17, 0), rgba(0, 0, 0, .8) 100%,
+        rgba(17, 17, 17, .64) 0);
+        border-radius: 0 0 5px 5px;
+        height: 60px;
+    }
+
+    .lights{
+        background-color: #000000;
+        margin-top: -10px;
+        margin-bottom: -10px;
+    }
+
+    .navbar{
+        margin-top: -10px;
+    }
+</style>
+
+
+
+<body>
+    <div id="snow-container"></div>
+
+    
+
+    <div class="main-kep">
+        <header>
+            <nav class="navbar bg-dark navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand fs-4 fw-bold text-danger" href="fooldal.html"><img src="./kepek/logo.jpg" alt="logo" class="logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="fooldal.html">Főoldal</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="tortenete.html">Története</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="receptek.html" class="nav-link">Receptek</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link filmekszin">Filmes bónuszok</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+
+
+        <div class="lights">
+            <div class="main">
+                <div class="circle red"></div>
+                <div class="circle yellow"></div>
+                <div class="circle blue"></div>
+                <div class="circle green"></div>
+                <div class="circle red"></div>
+                <div class="circle yellow"></div>
+                <div class="circle blue"></div>
+                <div class="circle green"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <main>
+        <section id="filmek" class="py-5">
+            <div class="container">
+                <h2 class="filmcim">Karácsonyi film ajánlásaink</h2>
+                <div class="row gx-4 gy-4">
+                    <div class="col-3 col-lg-3">
+                        <div class="card" style="background-image: url(kepek/grincs.jpg);" data-aos="fade-up" data-aos-duration="1300">
+                            <div class="card-header"></div>
+                            <div class="card-content">
+                                <div class="card-bottom fs-5 pt-3 mb-0 pb-1">
+                                    <div class="title"><a class="title" href="https://www.youtube.com/watch?v=8h5NjfECWf8" target="_blank">A Grincs</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3 col-lg-3">
+                        <div class="card" style="background-image: url(kepek/karacsének.jpg);" data-aos="fade-up" data-aos-duration="1300">
+                            <div class="card-header"></div>
+                            <div class="card-content">
+                                <div class="card-bottom fs-5 pt-3 mb-0 pb-1">
+                                    <div class="title"><a class="title" href="https://www.youtube.com/watch?v=3Nxo0B_Y7_I" target="_blank">Karácsonyi ének</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3 col-lg-3">
+                        <div class="card" style="background-image: url(kepek/artur.png);" data-aos="fade-up" data-aos-duration="1300">
+                            <div class="card-header"></div>
+                            <div class="card-content">
+                                <div class="card-bottom fs-5 pt-3 mb-0 pb-1">
+                                    <div class="title"><a class="title" href="https://www.youtube.com/watch?v=7tk-WZSqIGQ" target="_blank">Karácsony Artúr</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3 col-lg-3">
+                        <div class="card" style="background-image: url(kepek/polar.jpg);" data-aos="fade-up" data-aos-duration="1300">
+                            <div class="card-header"></div>
+                            <div class="card-content">
+                                <div class="card-bottom fs-5 pt-3 mb-0 pb-1">
+                                    <div class="title"><a class="title" href="https://www.youtube.com/watch?v=qZGz2GRS_Rw" target="_blank">Polár Expressz</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row gx-4 gy-4 py-5">
+                    <div class="col-3">
+                        <div class="card" style="background-image: url(kepek/homealone.jpg);" data-aos="fade-up" data-aos-duration="1500">
+                            <div class="card-header"></div>
+                            <div class="card-content">
+                                <div class="card-bottom fs-5 pt-3 mb-0 pb-1">
+                                    <div class="title"><a class="title" href="https://www.youtube.com/watch?v=-1g8cLY2fZw" target="_blank">Reszkessetek betörők!</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card" style="background-image: url(kepek/harry.jpg);" data-aos="fade-up" data-aos-duration="1500">
+                            <div class="card-header"></div>
+                            <div class="card-content">
+                                <div class="card-bottom fs-5 pt-3 mb-0 pb-1">
+                                    <div class="title"><a class="title" href="https://www.youtube.com/watch?v=EutcDHZCJ_0" target="_blank">Harry Potter és a bölcsek köve</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card" style="background-image: url(kepek/klaus.jpg);" data-aos="fade-up" data-aos-duration="1500">
+                            <div class="card-header"></div>
+                            <div class="card-content">
+                                <div class="card-bottom fs-5 pt-3 mb-0 pb-1">
+                                    <div class="title"><a class="title" href="https://www.youtube.com/watch?v=9qxJ3teQ7nw" target="_blank">Klaus</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card" style="background-image: url(kepek/hull.jpg);" data-aos="fade-up" data-aos-duration="1500">
+                            <div class="card-header"></div>
+                            <div class="card-content">
+                                <div class="card-bottom fs-5 pt-3 mb-0 pb-1">
+                                    <div class="title"><a class="title" href="https://www.youtube.com/watch?v=nXPC9zuqQW8" target="_blank">Hull a pelyhes</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    
+
+
+
+
+
+    <script src="snow.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="lights.js"></script>
+</body>
+</html>

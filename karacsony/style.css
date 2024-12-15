@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=DynaPuff:wght@400..700&family=Prociono&display=swap');
+
+*{
+    font-family: "DynaPuff", system-ui;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.main-kep{
+    background-image: url(./kepek/tortenete.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 1000px;
+}
+
+.navbar{
+    margin-bottom: -10px;
+    margin-top: -10px;
+}
+
+.logo{
+    width: 75px;
+    border-radius: 60px;
+}
+
+.mainhatter{
+    background-color: rgb(244, 236, 227);
+}
+
+header{
+    box-shadow: 0px 4px 8px rgb(0, 0, 0, 0.3);
+}
+
+.nav-link.active{
+    color: #090030 !important;
+}
+
+.nav-link.active:hover{
+    color: #ff2600 !important;
+}
+
+.tortenetszin{
+    color: #ff2600 !important;
+}
+
+.nav-link:link , 
+.nav-link:visited{
+    color: #090030;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 24px;
+    transition: all 0.3s linear;
+}
+
+.nav-link:hover , .nav-link:active{
+    color: #ff2600;
+}
+
+
+.nai-item {
+    align-items: end;
+}
+
+.dropdown-item{
+    color: #090030 !important;
+}
+
+.dropdown-menu{
+    background-color: rgb(244, 236, 227) !important;
+}
+
+
+h1 {
+    color: black;
+    text-align: center;
+}
+
+p {
+  font-size: 20px;
+  text-align: justify;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+#vallas{
+    background-color: rgba(13, 90, 47, 0.5);
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.kep1, .kep2, .kep3 {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.kep1{
+    margin-right: 20px;
+}
+
+.kep2{
+    margin-right: 20px;
+}
+
+.amerika{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+  .kep4, .kep5, .kep6 {
+    max-width: 100%;
+    justify-content: center;
+  }
+
+
+section {
+    display: block;
+    clear: both;
+  }
+
+
+h2 {
+    color: black;
+    text-align: center;
+}
+
+
+#kulon_orszagok {
+    background-color: rgba(13, 90, 47, 0.5);
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 50px;
+}
+
+
+figcaption {
+    text-align: center;
+    color: white;
+}
+
+
+.kep4 {
+    transform: translate(20px);
+}
+
+
+.anglia{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+
+
+.kep7, .kep8 {
+    max-width: 100%;
+}
+
+
+.kep8 {
+    transform: translate(15px);
+}
+
+
+.japan{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+
+.kep10 {
+    transform: translate(20px);
+}
+
+.kep9 {
+    transform: translate(15px);
+}
+
+
+
+#magyarkari{
+    background-color: rgba(13, 90, 47, 0.5);
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 15px;
+    height: 900px;
+}
+
+
+.kep11, .kep12, .kep13 {
+    margin-top: 30px;
+}
