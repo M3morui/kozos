@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=DynaPuff:wght@400..700&family=Prociono&family=Twinkle+Star&family=Yuji+Mai&display=swap');
+
+*{
+    font-family: "Twinkle Star", serif;
+    font-style: normal;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(9, 27, 41);
+    color: bisque;
+}
+
+.headerkep{
+    width: 100%;
+    height: 550px;
+}
+
+h1{
+    text-align: center;
+    background-color: rgb(199, 152, 0);
+    color: rgb(9, 27, 41);
+    margin: 0px;
+    padding: 10px;
+    font-weight: 900px;
+}
+
+nav.navlist{
+    text-align: center;
+    padding: 10px;
+}
+
+nav a:hover{
+    background-color: rgb(199, 152, 0);
+    color: rgb(9, 27, 41);
+    padding: 10px;
+}
+
+.navlist{
+    background-color: rgb(23, 17, 51);
+    color: rgb(199, 152, 0);
+}
+
+ul.navlist{
+    list-style: none;
+}
+
+li.navlist{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600px;
+}
+
+nav a{
+    color: rgb(199, 152, 0);
+    text-decoration: none;
+    padding: 10px;
+}
+
+.oktobercim{
+    margin-top: 50px;
+    color: orange;
+    text-decoration: none;
+}
+
+.oktoberfest{
+    text-align: center;
+}
+
+.oktoberfestkep{
+    width: 50%;
+    height: auto;
+    border: 5px solid rgb(199, 152, 0);
+    box-shadow: 0px 4px 8px 3px rgba(255, 238, 0, 0.5);
+}
+
+figure:hover{
+    opacity: 0.8;
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out;
+}
+
+p{
+    text-align: justify;
+    font-size: 18px;
+    padding: 5px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.halottcim{
+    margin-top: 50px;
+    color: rgb(199, 0, 0);
+    text-decoration: none;
+}
+
+.halottaknapja{
+    text-align: center;
+}
+
+.halottnap{
+    width: 50%;
+    height: auto;
+    border: 5px solid rgb(199, 0, 0);
+    box-shadow: 0px 4px 8px 3px rgba(255, 60, 0, 0.5);
+}
+
+.kinaicim{
+    margin-top: 50px;
+    color: rgb(199, 0, 96);
+    text-decoration: none;
+}
+
+.kinai{
+    text-align: center;
+}
+
+.kinaikep{
+    width: 50%;
+    height: auto;
+    border: 5px solid rgb(199, 0, 96);
+    box-shadow: 0px 4px 8px 3px rgba(255, 0, 238, 0.5);
+}
+
+.lampascim{
+    margin-top: 50px;
+    color: rgb(236, 224, 0);
+    text-decoration: none;
+}
+
+.lampas{
+    text-align: center;
+}
+
+.lampasvideo{
+    width: 50%;
+    height: 450px;
+    border: 5px solid rgb(222, 156, 0);
+    box-shadow: 0px 4px 8px 3px rgba(255, 225, 0, 0.5);
+}
+
+.diwalicim{
+    margin-top: 50px;
+    color: rgb(166, 0, 199);
+    text-decoration: none;
+}
+
+.diwali{
+    text-align: center;
+}
+
+.diwalikep{
+    width: 50%;
+    height: auto;
+    border: 5px solid rgb(166, 0, 199);
+    box-shadow: 0px 4px 8px 3px rgba(164, 0, 223, 0.5);
+}
+
+.tablazat{
+    margin-top: 50px;
+}
+
+caption{
+    margin: 3px;
+    font-size: 18px;
+}
+
+table{
+    margin: 20px auto;
+    border: 1px solid rgb(23, 17, 51);
+    border-collapse: collapse;
+}
+
+th{
+    background-color: rgb(199, 152, 0);
+    color: rgb(23, 17, 51);
+}
+
+th, tr, td{
+    border: 1px solid rgb(199, 152, 0);
+    padding: 3px;
+}
+
+footer{
+    background-color: rgb(199, 152, 0);
+    color: rgb(23, 17, 51);
+}
+
+.alja{
+    margin-top: 50px;
+    margin-bottom: -15px;
+}
+
+.footer{
+    text-align: center;
+    font-size: 16px;
+}
